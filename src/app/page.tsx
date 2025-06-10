@@ -1,7 +1,6 @@
-import { index } from "drizzle-orm/gel-core";
-import Link from "next/link";
-import { id } from "zod/v4/locales";
 import { db } from "~/server/db";
+
+export const dynamic = "force-dynamic"; // This is to ensure the page is not cached
 
 const paths = [
   "/media/20160812_115538.jpg",
@@ -15,6 +14,8 @@ const images = paths.map((path, index) => ({
 }));
 
 export default async function HomePage() {
+
+
 
   const posts = await db.query.posts.findMany();
 
