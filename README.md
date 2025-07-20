@@ -10,6 +10,7 @@
 - [x] Attach db to UI
 - [x] Add authentication (w/ clerk)
 - [ ] Add image upload
+- [ ] "taint" (server only)
 - [ ] Routing/image page (w/ parallel route feature in AppRouter)
 - [ ] Delete button (w/ Server Actions)
 - [ ] Analytics (w/ posthog)
